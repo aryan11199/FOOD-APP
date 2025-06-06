@@ -1,0 +1,283 @@
+
+body{
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #eef4ed;
+    }
+    .head{
+        display: flex;
+        padding: 20px;
+        flex-direction: row;
+        background: linear-gradient(135deg, #90a955, #7ae582);
+        gap: 3rem;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0%;
+    }
+    .head h1{
+        margin-top: 22px;
+        margin-left: 80px;
+        font-size: 3rem;
+        color: #000;
+    }
+    .loc{
+        width: 250px;
+        height: 40px;
+        margin-top: 22px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+    .search{
+        width: 400px;
+        height: 40px;
+        /* display: flex; */
+        margin-top: 22px;
+        justify-content: space-around;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+    .search:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .search input{
+        width: 300px;
+        height: 40px;
+        /* margin-top: 22px; */
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+    button{
+        width: 80px;
+        height: 40px;
+        /* margin-top: 22px; */
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 12px;
+    }
+    button:hover{
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    .profile{
+        width: 40px;
+        height: 40px;
+        margin-top: 22px;
+        margin-left: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #686363;
+    }
+
+    .profile ion-icon{
+        font-size: 2rem;
+        color: #fff;
+    }
+    .profile:hover ion-icon{
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .main-head{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .contact-head{
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #d4a373;
+        color: rgb(26, 25, 25);
+        border: 1px solid black;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    .contact-head{
+        background-image: url(/images/background.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .contact-form h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .contact-form{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background: linear-gradient(135deg, #dde5b6, #a7c957);
+        color: #000;
+        
+    }
+    .contact-form input{
+        margin: 1%;
+        padding: 1%;
+        font-size: 1.2rem;
+    }
+    .contact-form button{
+        margin-left: 300px;
+        margin-bottom: 10px;
+        width: 70px;
+        height: 40px;
+        background-color: #a7c957;
+        border-radius: 10px;
+        color: #000;
+    }
+    .contact-form button:hover{
+        background-color:#adc178;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        width: 100%;
+        background-color: #bac09b;
+        margin-right: 10px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        margin-left: -30px;
+        padding: 1%;
+        /* margin-top: 3rem; */
+        justify-content: space-between;
+        /* background-color:#bac09b; */
+    }
+    .Footer1{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .Footer1 h1{
+        font-size: 2rem;
+        color: #000;
+        margin-bottom: 1.5rem;
+    }
+    .Footer1 h3{
+        color: #000;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .Footer1 h3:hover{
+        color: #4f772d;
+    }
+    .Footer1 h2{
+        color: #5a6d2e;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .Footer1 a{
+        text-decoration: none;
+        color: #000;
+        font-size: 1.3rem;
+    }
+    .Footer1 a:hover{
+        color: #4f772d;
+    }
+    .Footer1 li{
+        list-style: none;
+    }
+    .Footer1 a ion-icon{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        gap: 1rem;
+    }
+    @media screen and (max-width:1150px){
+        .main{
+            width: auto; 
+        }
+        .head{
+            display: flex;
+            width: auto;
+            gap: 0%;
+            flex-direction: column;
+        }
+        .head h1{
+            margin-left: 0px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 2%;
+            
+        }
+        .loc{
+            margin-top: 0%;
+            width: 130px;
+            font-size: 1rem;
+        }
+        .search{
+            margin-top: 0%;
+            width: 150px;
+            height: 60px;
+            /* display: flex; */
+            font-size: 1rem;
+            flex-direction: column;
+        }
+        .search button{
+            margin-left: 200px;
+        }
+        .profile{
+            margin-top: 0%;
+        }
+        /* .search input{
+            width: 100%;
+            font-size: 1rem;
+        } */
+        .main-head{
+            width: 100%;
+            display: ruby;
+            margin-bottom: 30px;
+            margin-right: 40px;
+        }
+        .contact-head{
+            margin-left: 40px;
+            padding:0%;
+            width: 100%;
+            width: 600px;
+            height: 100%;
+        }
+        .contact-form{
+            margin-left: 40px;
+            padding: 0%;
+            width: 600px;
+            height: 400px;
+
+        }
+
+    }
