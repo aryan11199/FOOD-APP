@@ -11,7 +11,7 @@ body{
     background: linear-gradient(135deg, #4f772d, #7ae582);
 }
 .container{
-    background-image: url(/images/bc2.png);
+    background-image: url(/image1/bc2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #fff;
