@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4f772d, #7ae582);
+}
+.container{
+    background-image: url(/images/bc2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 100%;
+    width: 550px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    color: #4f772d;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+h3{
+    text-align: center;
+    color: #729b4f;
+    margin-bottom: 10px;
+}
+input{
+    width: 120%;
+    height: 40px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 8px;
+    gap: 10px;
+}
+input:focus{
+    outline: none;
+    border-color: #729b4f;
+}
+.btn{
+    width: 40%;
+    height: 40px;
+    padding: 12px;
+    background-color: #a1c181;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size:15px ;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #729b4f;
+    color: #fff;
+}
+.container a{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+.container a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width : 800px) {
+    .container{
+        width: 370px;
+        height: 450px;
+    }
+}

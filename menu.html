@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menue</title>
+</head>
+<link rel="stylesheet" href="menu.css">
+<body>
+    <div class="header">
+        <h1>Foodies</h1>
+         <div class="navbar">
+            <a href="/home/home.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+            <a href="menu.html"><ion-icon name="restaurant-outline"></ion-icon>Menu</a>
+            <a href="/home/contact.html">
+                <ion-icon name="call"></ion-icon>Contact Us
+            </a>
+            <a href="#"><ion-icon name="information-circle-outline"></ion-icon>About</a>
+            <a href="/home/feedback.html"><ion-icon name="Feedback"></ion-icon>Feedback</a>
+        </div>
+        <div class="log-out">
+            <a href="/singin.html"><ion-icon name="log-out-outline"></ion-icon>Log Out</a>
+        </div>
+    </div>
+    <div class="head">
+        <div class="main-navbar">
+            <ion-icon class="menu-toggle" name="Menu-outline"></ion-icon>
+          <div class="search">
+            <input type="text" placeholder="Search for food, drinks, etc.">
+            <button type="button">Search</button>
+          </div>
+          <div class="profile">
+            <ion-icon class="cart" name="cart-outline">cart</ion-icon>
+            <ion-icon class="user" name="person-outline">Profile</ion-icon>
+          </div>
+        </div>
+        <h1>Welcome To Kitchen</h1>
+        <div class="main-menu">
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/biryani.png" >
+                </a>
+                <h2>Biriyani</h2>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/pizza.png">
+                </a>
+                <h2>Pizza</h2>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/burger1.png">
+                </a>
+                <h2>Burger</h2>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/panner.png">
+                </a>
+                <h2>Paneer</h2>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/chinese.png">
+                </a>
+                <h2>Chinese</h2>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/pasta.png">
+                </a>
+                <h2>Pasta</h2>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/non.veg.png">
+                </a>
+                <h2>Non.Veg</h2>
+            </div>   
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/veg.png">
+                </a>
+                <h2>Veg</h2> 
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <img src="/images/chaat.png">
+                </a>
+                <h2>Chaat</h2>
+            </div>    
+        </div>
+        <div class="footer">
+                <div class="foot">
+                    <div class="Footer1">
+                    <ul>
+                        <h1>Foodies</h1>
+                        <h3>Add: 42 ARN Lane,
+                            <br> Mumbai,100023</h3>
+                        <h3>Email:Foodies@gmail.com</h3>
+                    </ul>
+                </div>
+                <div class="Footer1">
+                    <ul>
+                        <h2>Foodies</h2>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/home/contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Footer1">
+                    <ul>
+                        <h2>Get Help</h2>
+                        <li>
+                            <a href="#">FAQ</a>
+                        <li>
+                            <a href="#">Food Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#">Order Status</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Option</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Process</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Footer1">
+                    <ul>
+                        <h2>Legal</h2>
+                        <li>
+                            <a href="#">Terms & Condition</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Others</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Footer1">
+                    <ul>
+                        <h2>Follow Us</h2>
+                        <li>
+                            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="food.js"></script>
+<script>
+    const mobile = document.querySelector('.menu-toggle');
+
+const mobileLink = document.querySelector('.header');
+
+mobile.addEventListener("click", function(){
+
+mobile.classList.toggle("is-active");
+
+mobileLink.classList.toggle("active");
+
+});
+
+// close menu when click
+
+mobileLink.addEventListener("click", function(){
+
+const menuBars = document.querySelector(".is-active");
+
+if(window.innerWidth<=800 && menuBars) {
+
+mobile.classList.toggle("is-active");
+
+mobileLink.classList.toggle("active");
+
+}
+})
+</script>
+</html>
